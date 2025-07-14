@@ -5,5 +5,6 @@ provider "aws" {
 resource "aws_ssm_parameter" "example" {
   name  = "/my/parameter"
   type  = "String"
-  value = "HelloFromTerraform"
+  value = "HelloFromCodePipeline"
+  overwrite = true
 }
